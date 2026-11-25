@@ -1,9 +1,8 @@
-FROM postgis/postgis
+FROM postgis/postgis:13-3.5
 
-RUN apt-get update && apt-get install -y \
+RUN rm -f /etc/apt/sources.list.d/pgdg.list && apt-get update && apt-get install -y \
     less \
-    make \
-    vim
+    make
 
 WORKDIR /tmp/db
 
