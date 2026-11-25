@@ -2,8 +2,8 @@
 
 |     | sequential | parallel |
 | --- | ---------- | -------- |
-| normalized (unbatched) | ![tests_normalized_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized.yml/badge.svg)] | ![tests_normalized_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_parallel.yml/badge.svg)] | 
-| normalized (batched) | [![tests_normalizedbatch_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_batch.yml/badge.svg)] | [![tests_normalizedbatch_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_batch_parallel.yml/badge.svg)] | denormalized | ![tests_denormalized_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml/badge.svg) | ![tests_denormalized_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml/badge.svg) |
+| normalized (unbatched) | ![tests_normalized_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized.yml/badge.svg) | ![tests_normalized_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_parallel.yml/badge.svg) | 
+| normalized (batched) | ![tests_normalizedbatch_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_batch.yml/badge.svg) | ![tests_normalizedbatch_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_normalized_batch_parallel.yml/badge.svg) | denormalized | ![tests_denormalized_sequential](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_denormalized.yml/badge.svg) | ![tests_denormalized_parallel](https://github.com/saraecawley/twitter_postgres_parallel/actions/workflows/tests_denormalized_parallel.yml/badge.svg) |
 
 In this assignment, you will learn how to load data into postgres much faster using two techniques:
 1. batch loading (i.e. running the INSERT command on more than one row at a time)
