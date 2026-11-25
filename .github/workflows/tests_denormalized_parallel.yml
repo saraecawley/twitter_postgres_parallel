@@ -9,6 +9,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - uses: actions/setup-python@v5
+      with:
+        python-version: "3.10"
     - name: setup python
       run: |
         pip3 install -r requirements.txt
@@ -16,9 +19,9 @@ jobs:
       run: |
         git submodule init
         git submodule update
-        docker-compose up -d --build
+        docker compose up -d --build
         docker ps -a
         sleep 20
         ./load_tweets_parallel.sh
-        docker-compose exec -T pg_denormalized ./run_tests.sh
+        docker compose exec -T pg_denormalized ./run_tests.sh
 
